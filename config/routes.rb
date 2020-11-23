@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'test/index'
   #get 'dashboard/index'
   devise_for :users, :controllers => {sessions: 'sessions', registrations: 'registrations'}
   get 'home/index'
