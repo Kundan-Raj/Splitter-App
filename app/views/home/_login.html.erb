@@ -1,0 +1,47 @@
+<!-- start of Login Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog" id="login-dialog">
+            <div class="modal-content" id="login-content" >
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div id="ls-lg-Modal">
+                            <p id="brand">
+                                <span class="lg-s">$</span>
+                                <span class="lg-plitter">plitter</span>
+                            </p>
+                            <span Class="lg-split">SPLIT IT UP</span>
+                        </div>
+                    </div>
+                    <div class="col6">
+                        <%= image_tag("/assets/login/close.png", alt: "applestore_button", id: "modal-close", class:"close", "data-dismiss":"modal") %>
+                      <!--  <img src="images/login/close.png" alt="close" type="button" class="close" data-dismiss="modal" id="modal-close"> -->
+                        <br/>
+                        <p id="lg-cont-header">LOGIN</p>
+                        <p id="lg-para-1">Dont have an account? <a href="#" data-toggle="modal" data-target="#reg-Modal" data-dismiss="modal" id="link1">Create your account</a><br/>it takes less than a minute.</p>
+                        <div class="login-form">
+                        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+                            <div class="form-group">
+                                <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control", id:"e-mail",  onchange:"hideIcon(this);", Placeholder:"Email"%>
+                            </div>
+
+                            <div class="form-group">
+                                <%= f.password_field :password, autocomplete: "current-password", class:"form-control", id:"pwd",  onchange:"hideIcon(this);", Placeholder:"Password"%>
+                            </div>
+                            
+                          <div class="actions">
+                            <%= f.submit "Login", class:"login btn btn-warning rounded-pill", id:"log-btn"%>
+                          </div>
+                        <% end %>
+                            <p></p>
+                            <%= link_to "Forgot password", edit_user_password_path, id:"link2" %>
+                           <!-- <a href="#" id="link2">Forgot password</a> -->
+                            <br/>
+                            <p></p>
+                            <br/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+<!-- End of Modal Login -->

@@ -1,0 +1,35 @@
+
+<!-- Topbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: rgba(52, 83, 130, 1);width: 100%; position: fixed; height: 10%;">
+        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#"> 
+            <p style="display: flex; align-items: center;">
+            <span class="dash-s">$</span>
+            <span class="dash-plitter">plitter</span>
+            </p>
+            <span Class="dash-split" style="position: relative;">SPLIT IT UP</span>
+        </a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                <img src="images/dashboard/add_Bill.png" alt="add-bill">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                <span><img src="/assets/dashboard/notification.png" alt="notification"></span>
+                <span class="badge badge-danger badge-counter">3+</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                
+                <%= link_to( destroy_user_session_path, :method => :delete) do %>
+                    <%= image_tag("/assets/dashboard/logout.png", alt: "logout", id: "logout") %>
+                <% end %>
+                
+                
+            </li>
+        </ul>
+    </nav> 
+    <!-- End of Topbar -->
+<h1>Dashboard#index</h1>
+<p>Find me in app/views/dashboard/index.html.erb</p>

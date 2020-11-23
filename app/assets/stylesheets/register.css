@@ -1,0 +1,121 @@
+.col-sm-4 {
+    background-color: rgba(52, 83, 130, 1); 
+}
+#brand {
+    display: flex; 
+    align-items: center;
+}
+.reg-s {
+    font-family: SignPainter-HouseScript;
+    color: rgba(255, 255, 255, 1);
+    font-weight: lighter;
+    font-size: 700%;
+    margin-left:8%;
+}
+.reg-plitter{
+    font-family: SignPainter-HouseScript;
+    color: rgba(255, 255, 255, 1);
+    font-size: 400%;
+    font-weight: lighter;
+}
+.reg-split{
+    color: rgba(227, 174, 32, 1);
+    margin-left: 2%;
+    position: relative;
+    top: -88px;
+    left: 8px;
+}
+.col6 {
+    margin-left: 4%;
+    width: 54%;
+}
+#modal-close {
+    text-align: right; 
+    margin-top:2%; 
+    width: 7%; 
+    margin-right: -8%;
+}
+
+/* Register Modal Styling  */
+#register-dialog {
+    margin-top: 7%;
+    position: relative;
+    display: table;
+    overflow: auto;
+    min-width: 300px;
+}
+#register-content {
+    width: 126%;
+}
+#ls-reg-Modal {
+    margin-top: 72%;
+    text-align: center;
+}
+#reg-cont-header {
+    color: rgba(52, 83, 130, 1);  
+    font-family: Raleway; 
+    text-align: left; 
+    font-weight: 700;
+}
+#reg-para1 {
+    color: rgba(102, 102, 102, 1); 
+    font-family: Open Sans; 
+    font-weight: 400;
+    margin-left: 4%;
+}
+#link{
+    color: rgba(52, 83, 130, 1);
+    font-family: Open Sans;
+}
+input#user {
+    background-image: url('register/username_icon.png');
+    background-size:auto;
+    background-position:5% center;
+    background-repeat: no-repeat;
+    text-indent: 10%;
+}
+input#user:focus {
+    background-image:none;
+    text-indent:0px
+}
+input#e-mail {
+    background-image: url('register/email_icon.png');
+    background-size:auto;
+    background-position:5% center;
+    background-repeat: no-repeat;
+    text-indent: 10%;
+}
+input#e-mail:focus {
+    background-image:none;
+    text-indent:0px
+    }
+input#pwd {
+    background-image: url('register/password_icon.png');
+    background-size:auto;
+    left: 5%;
+    background-position:5% center;
+    background-repeat: no-repeat;
+    text-indent: 8%;
+}
+input#pwd:focus {
+    background-image:none;
+    text-indent:0px
+    }
+input#phn {
+    background-image: url('register/phone_icon.png');
+    background-size:auto;
+    left: 5%;
+    background-position:5% center;
+    background-repeat: no-repeat;
+    text-indent: 8%;
+}
+input#phn:focus {
+    background-image:none;
+    text-indent:0px
+}
+#reg-btn {
+    width: 100%;
+    font-family: Raleway;
+    font-weight: 600;
+    color:rgba(0, 0, 0, 1);
+}

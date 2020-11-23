@@ -1,0 +1,105 @@
+.col-sm-4 {
+    background-color: rgba(52, 83, 130, 1); 
+}
+#brand {
+    display: flex; 
+    align-items: center;
+}
+.lg-s {
+    font-family: SignPainter-HouseScript;
+    color: rgba(255, 255, 255, 1);
+    font-weight: lighter;
+    font-size: 700%;
+    margin-left:10%;
+}
+.lg-plitter{
+    font-family: SignPainter-HouseScript;
+    color: rgba(255, 255, 255, 1);
+    font-size: 400%;
+    font-weight: lighter;
+}
+.lg-split{
+    color: rgba(227, 174, 32, 1);
+    margin-left: 2%;
+    position: relative;
+    top: -88px;
+    left: 8px;
+}
+.col6 {
+    margin-left: 4%;
+    width: 54%;
+}
+#modal-close {
+    text-align: right; 
+    margin-top:2%; 
+    width: 7%; 
+    margin-right: -8%;
+}
+
+/* Login Modal Styling  */
+#login-dialog {
+    margin-top: 10%;
+    position: relative;
+    display: table;
+    overflow: auto;
+    min-width: 300px;
+}
+#login-content {
+    width: 126%;
+}
+#ls-lg-Modal {
+    margin-top: 42%;
+    text-align: center;
+}
+#lg-cont-header {
+    color: rgba(52, 83, 130, 1); 
+    font-family: Raleway; 
+    text-align: left; 
+    font-weight: 700;
+}
+#lg-para-1 {
+    color: rgba(102, 102, 102, 1); 
+    font-family: Open Sans; 
+    font-weight: 400;
+}
+#link1{
+    color: rgba(52, 83, 130, 1);
+}
+#link2{
+    color: rgba(52, 83, 130, 1);
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: -5%;
+}
+
+input#e-mail {
+    background-image: url('login/email_icon.png');
+    background-size:auto;
+    background-position:5% center;
+    background-repeat: no-repeat;
+    text-indent: 10%;
+}
+input#e-mail:focus {
+    background-image:none;
+    text-indent:0px
+    }
+
+input#pwd {
+    background-image: url('login/password_icon.png');
+    background-size:auto;
+    left: 5%;
+    background-position:5% center;
+    background-repeat: no-repeat;
+    text-indent: 8%;
+}
+input#pwd:focus {
+    background-image:none;
+    text-indent:0px
+    }
+#log-btn {
+    width: 100%;
+    font-family: Raleway;
+    font-weight: 600;
+    color:rgba(0, 0, 0, 1);
+}
