@@ -1,35 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Friends-splitter</title>
+    <link href="stylefiles/dashboard.css" rel="stylesheet" type="text/css">
+      
+    <!-- Bootstrap core CSS -->
+    <link href="https://db.onlinewebfonts.com/c/cfdf18a10f253f0aa9db6db978d328c0?family=SignPainter+HouseScript" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
+      
+    <!-- Bootstrap Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDr4hv3W_J8l6nID8mdG1YXMBbWa6YbBkA&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
 
-<!-- Topbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: rgba(52, 83, 130, 1);width: 100%; position: fixed; height: 10%;">
-        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#"> 
-            <p style="display: flex; align-items: center;">
-            <span class="dash-s">$</span>
-            <span class="dash-plitter">plitter</span>
-            </p>
-            <span Class="dash-split" style="position: relative;">SPLIT IT UP</span>
-        </a>
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                <img src="images/dashboard/add_Bill.png" alt="add-bill">
+  </head>
+    
+  <body id="page-top">
+      
+  <!-- Page Wrapper -->
+  <div class="active" id="wrapper">
+      
+  <!-- Sidebar -->
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+                <div class="sidebar" id="sidebar">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <%= link_to dashboard_index_path do %>
+                        <a class="nav-link" type="button" href="#" id="dash-shadow">
+                            <br/>
+                            <%= image_tag("/assets/dashboard/dashboard_icon_active.png", alt: "dash-icon", id: "dash-icon-act") %>
+                            <p class="dash" id="dash-text">
+                            DASHBOARD 
+                            </p>
+                        </a>
+                        <% end %><hr id="dash-hr" />
+                  <!--      <a class="nav-link" type="button" href="#" id="dash-shadow">
+                        <br/>
+                        <img src="images/dashboard/dashboard_icon_active.png" alt="dash-icon" id="dash-icon-act">
+                        <p class="dash" id="dash-text">
+                        DASHBOARD 
+                        </p>
+                        </a><hr id="dash-hr" />   -->
+                    </li>
+                    <li class="nav-item">
+                        <%= link_to friend_index_path do %>
+                            <%= image_tag("/assets/dashboard/friend_icon.png", alt: "fnd-icon", id: "fnd-icon") %>
+                            <p class="dash" id="fnd-text">
+                            FRIENDS
+                            </p>
+                        <% end %><hr id="frnd-hr" />
+                    <!--    <a class="nav-link" href="#">
+                        <img src="images/dashboard/friend_icon.png" alt="fnd-icon" id="fnd-icon">
+                        <p class="dash" id="fnd-text">
+                        FRIENDS
+                        </p>
+                        </a><hr id="frnd-hr" /> -->
+                    </li>
+                    <li class="nav-item">
+                        <%= link_to contact_index_path do %>
+                            <%= image_tag("/assets/dashboard/Contact_icon.png", alt: "cont-icon", id: "cont-icon") %>
+                            <p class="dash" id="cont-text">
+                            CONTACT
+                            </p>
+                        <% end %><hr id="cont-hr" />
+                        
+              <!--          <a class="nav-link" href="#" id="dash-shaow">
+                        <img src="images/dashboard/Contact_icon.png" alt="cont-icon" id="cont-icon">
+                        <p class="dash" id="cont-text">
+                        CONTACT
+                        </p>
+                        </a><hr id="cont-hr" />  -->
+                    </li>
+                </ul>
+                </div>
+            </nav>
+  <!-- Profile bar -->            
+      <%= render "dashboard/profilebar" %>
+  <!-- End of Sidebar -->
+      
+  <!-- Main Content -->
+      <div id="content">
+          
+  <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        
+  <!-- Topbar -->
+      <%= render "dashboard/navbar" %>
+
+  <!-- End of Topbar -->
+    
+  <!-- Begin Page Content -->
+      <div class="container-fluid">
+        
+  <!-- Content Row -->
+      <br/><br/><br>
+      <div class="row" id="bill-head">
+        <div class="bill-head" id="bill-head-start">    
+         <span id="bill-head-text">
+            BILLS
+          </span>
+          <span class="btn-group" id="dash-gp-btn">
+                <button id="btn-1">CREATED</button>
+                <button id="btn-2">YOU ARE IN</button>
+                <button id="btn-3">SETTLED</button>
+          </span>
+        </div> 
+      </div>
+  <!-- Content Row -->
+      <div class="row" id="slider-start">
+        <span id="slider-text">Choose Debit or Credit?</span>
+          <label class="switch" id="slider-pos"><input type="checkbox" id="togBtn"><div class="slider round"><span class="on">Debit</span><span class="off">Credit</span></div></label>
+     </div>
+  <!-- Content Row -->
+      <div class="row" id="date-start">
+        <p id="date-st">
+        <span id="demo"></span>
+        <span><%= image_tag("/assets/dashboard/calendar_icon.png", alt: "calendar", id: "calendar-icon") %>
+           <!-- <img src="images/dashboard/calendar_icon.png" alt="calender" id="calendar-icon">  --> </span></p>
+      </div>
+          
+      </ div>
+      <!-     
+      <div class="row">
+        <br>
+    <ul id="accordion">
+        <li class="card" id="bill-card">
+            <div class="card-header" id="dash-card-head">
+                <span id="card-text">Launch at Taj</span>
+                <a class="card-link" data-toggle="collapse" href="#collapseOne1">
+                    <%= image_tag("/assets/dashboard/expand_icon.png", alt: "expand", id: "expand-icon") %>
+                  <!--  <img src="images/dashboard/expand_icon.png" alt="expand" id="expand-icon">  -->
                 </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                <span><img src="/assets/dashboard/notification.png" alt="notification"></span>
-                <span class="badge badge-danger badge-counter">3+</span>
-                </a>
-            </li>
-            <li class="nav-item">
+                <span type="button" class="btn btn-warning rounded-pill" id="head-btn-settle">SETTLE UP</span>
+                <span id="card-amt">$300</span>
+            </div>
+        <div id="collapseOne1" class="collapse show" data-parent="#accordion">
+            <div class="card-body" id="dash-card-body">
+              <div class="row">
+                  <div class="col-2">
+                      <ul id="dash-ls-bill">
+                          <li>Total Amount</li>
+                          <li>No. of members</li>
+                          <li>Share</li>
+                          <li>Debit</li>
+                          <li>Settled with</li>
+                          <dd>- Ken</dd>
+                          <dd style="line-height: 1px;">- flora</dd>
+                      </ul>
+                  </div>
+                  <div class="col-2">
+                       <ul id="dash-rs-bill">
+                          <li>$60</li>
+                          <li>12</li>
+                          <li>$5</li>
+                          <li>$10</li>
+                          <li>Ken & flora </li>
+                          <li>$5</li>
+                          <li>$5</li>
+                      </ul>
+                  </div>
+                  <div class="col-8">
+                      <div id="map"></div>
+              </div>
+            </div>
+        </div>
+            <div class="card-footer" style="background-color: rgba(235, 235, 235, 1); height: 100px;">
+                <p style="display: inline-flex;">Friends in this group</p>
+                    <ul id="card-menu" style="display: inline-flex; margin-top: -12px;">
+                         <li><%= image_tag("/assets/dashboard/profile_g.png", alt: "abc") %>
+                           <!--  <img src="images/dashboard/profile_g.png" alt="g"> --> </li>
+                         <li><%= image_tag("/assets/dashboard/profile_a.png", alt: "abc") %>
+                             <!-- <img src="images/dashboard/profile_a.png" alt="g"> --> </li>
+                          <li><%= image_tag("/assets/dashboard/profile_b.png", alt: "abc") %>
+                              <!-- <img src="images/dashboard/profile_b.png" alt="g"> --> </li>
+                          <li><%= image_tag("/assets/dashboard/profile_c.png", alt: "abc") %>
+                              <!-- <img src="images/dashboard/profile_c.png" alt="g"> --> </li>
+                          <li><%= image_tag("/assets/dashboard/profile_d.png", alt: "abc") %>
+                              <!-- <img src="images/dashboard/profile_d.png" alt="g"> --> </li>
+                          <li style="float: right"><%= image_tag("/assets/dashboard/profile_e.png", alt: "abc") %>
+                              <!-- <img src="images/dashboard/profile_e.png" alt="g"> --> </li>
+                        
+                    </ul>
+                <%= image_tag("/assets/dashboard/next.png", alt: "next", id: "next-img") %>
+              <!--  <img src="images/dashboard/next.png" alt="next" style=""> -->
                 
-                <%= link_to( destroy_user_session_path, :method => :delete) do %>
-                    <%= image_tag("/assets/dashboard/logout.png", alt: "logout", id: "logout") %>
-                <% end %>
-                
-                
-            </li>
-        </ul>
-    </nav> 
-    <!-- End of Topbar -->
-<h1>Dashboard#index</h1>
-<p>Find me in app/views/dashboard/index.html.erb</p>
+            </div>
+            </div>
+        </li>
+    </ul>
+    </div>
+  <!-- /.container-fluid -->
+    
+      </div>
+  <!-- End of Main Content -->
+
+      </div>
+  <!-- End of Content Wrapper -->
+      
+  <!-- Footer -->
+      <footer class="sticky-footer bg-light" id="dash-footer">
+            <div class="container my-auto">
+              <div class="copyright text-center my-auto" id="dash-footer-st">
+                <span id="dash-ls-footer">Privacy and terms</span>
+                <span id="dash-rs-footer">&#169; 2013-2016 . All rights reserved.</span>
+              </div>
+            </div>
+      </footer>
+      <!-- End of Footer -->
+      
+      </div>
+  <!-- End of Page Wrapper -->
+      
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+  <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }   
+  </script>  
+  <script>
+    document.getElementById("demo").innerHTML = formatAMPM();
+
+    function formatAMPM() {
+    var d = new Date(),
+        minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+        hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+       // else if (condition2) { return value2; }
+        //else if (condition3) { return value3; 
+       // ampm = d.getHours() >=12 ? 'st' : 'th',
+        ampm = d.getHours() >=12 ? '' : 'th',
+        //ampm = d.getHours() >= 12 ? 'pm' : 'am',
+        months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+        days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    return d.getDate()+ampm+' '+months[d.getMonth()]+' '+d.getFullYear();
+    }
+  </script>
+      
+  </body>
+  </html>
+
+
+
+
+
+
+
+
+
+
+
+

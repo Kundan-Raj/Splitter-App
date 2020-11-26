@@ -1,0 +1,495 @@
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+body {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #858796;
+  text-align: left;
+  background-color: #fff;
+}
+[tabindex="-1"]:focus:not(:focus-visible) {
+  outline: 0 !important;
+}
+
+ /* Start of sidebar */
+#sidebarMenu {
+    position: fixed; 
+    width: 7%; 
+    background-color: rgba(52, 83, 130, 1);
+    height: 100%;top:11%; 
+    left:0%;
+}
+#sidebar {
+    margin-left: -50px;
+}
+#dash-shadow {
+    margin-left: -2%;
+   -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+}
+#dash-icon-act {
+    height: 25%; 
+    width: 25%; 
+    color: rgba(255, 255, 255, 1);
+    margin-left: 48%; 
+    margin-top: -30px;
+}
+#dash-text {
+    margin-left: 10%; 
+    line-height: 0px; 
+    font-family: Raleway; 
+    font-weight: 600; 
+    font-size: 80%;
+    color: rgba(255, 255, 255, 1);
+}
+#db-hr {
+    background-color: white; margin-top: -1%;margin-right:  -15px;
+}
+#fnd-icon {
+    height: 30%; 
+    width: 30%; 
+    color: rgba(255, 255, 255, 1);
+    margin-left: 45%; 
+    margin-top: -20px;
+}
+#fnd-text {
+    margin-left: 25%; 
+    line-height: 1px; 
+    font-family: Raleway; 
+    font-weight: 600; 
+    font-size: 80%;
+    color: rgba(255, 255, 255, 1);
+}
+#fnd-hr {
+    background-color: white; margin-top: 0%;margin-right: -15px;
+}
+#cont-icon{
+    height: 25%; 
+    width: 25%; 
+    color: rgba(255, 255, 255, 1); 
+    margin-left: 48%; 
+    margin-top: -20px;
+}
+#cont-text {
+    margin-left: 24%; 
+    line-height: -0.01px; 
+    font-family: Raleway; 
+    font-weight: 600; 
+    font-size:80%; 
+    color: rgba(255, 255, 255, 1);
+}
+#con-hr {
+    background-color: white; margin-top: -15%; margin-right: -15px;
+}
+/*End of sidebar */
+
+/* Profile Sidebar */
+#Profile-sidebar{
+    left: 10%; 
+    position: fixed; 
+    width: 18%; 
+    height: 84.5%; 
+    top:11.5%;
+    left:7.25%;
+    background-color: rgba(242, 242, 242, 1);
+}
+#fnd-pro-img {
+    margin-left: -5%; margin-top: -5%;
+}
+#fnd-settings {
+    margin-bottom: 105%; margin-left: 110%;
+}
+.carousel-caption {
+    bottom: -10%;
+}
+#fnd-fname {
+    top:80%; font-family: Raleway; font-size: 100%; text-align: left;
+}
+#fnd-lname {
+    font-family: Raleway; font-size: 100%; text-align: left;
+}
+#sum-fnd {
+    font-family: Raleway; font-weight: 700; font-size:12px;
+}
+#fnd-div {
+    font-family: Raleway; font-weight: 700; font-size:12px;
+}
+#fnd-div {
+    margin-top: 10%;
+}
+.right {
+  border-left: 1px solid rgba(151, 151, 151, 1);
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 48.5%;
+}
+.right2 {
+  border-left: 1px solid rgba(151, 151, 151, 1);
+  height: 50px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 63.8%;
+}
+#bill-head {
+  padding: 10px;
+  margin-top: 2px;
+  background-image: url('dashboard/bill_header_bg.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#bill-hea {
+  padding: 10px;
+  margin-top: 2px;
+  background-image: url('dashboard/bill_header_bg.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* Group Button Styling */
+.btn-group button {
+    object-position: right;
+    background-color: rgba(255, 255, 255, 1); /* Green background */
+    border: 1px solid rgba(254, 254, 254, 1); /* Green border */
+    color: rgba(0, 0, 0, 1); /* White text */
+    padding: 1px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: right; /* Float the buttons side by side */
+    outline:none;
+    align-items: flex-end;
+}
+#btn-1{
+    border-radius: 16px 0px 0px 16px;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 14px;
+}
+#btn-3{
+    border-radius: 0px 16px 16px 0px;
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 14px;
+}
+#btn-2 {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 14px;
+}
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+    /* Clear floats (clearfix hack) */
+.btn-1:after {
+    content: "";
+    clear: both;
+    display: table;     
+}        
+    /* Added a background color on hover */
+#btn-1:hover {
+    background-color: rgba(151, 151, 151, 1);
+    border-radius: 16px;
+}
+    /* Added a background color on focus */
+#btn-1:focus {
+    background-color: rgba(151, 151, 151, 1);
+    border-radius: 16px;
+    color: rgba(255, 255, 255, 1);
+    outline: none;
+}
+#btn-2:hover {
+    background-color: rgba(151, 151, 151, 1);
+    border-radius: 16px;
+}
+#btn-2:focus {
+    background-color: rgba(151, 151, 151, 1);
+    border-radius: 16px;
+    color: rgba(255, 255, 255, 1);
+    outline: none;
+}
+#btn-3:hover {
+    background-color: rgba(151, 151, 151, 1);
+    border-radius: 16px;
+}
+#btn-3:focus {
+    background-color: rgba(151, 151, 151, 1);
+    border-radius: 16px;
+    color: rgba(255, 255, 255, 1);
+    outline: none;
+}
+/* End of Group Button Styling */
+
+
+
+
+
+/* toggle switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 32px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 4px;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(216, 216, 216, 1);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 28px;
+  width: 26px;
+  left: 2px;
+  bottom: 2px;
+  background-color: rgba(244, 165, 35, 1);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: rgba(216, 216, 216, 1);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(55px);
+  -ms-transform: translateX(55px);
+  transform: translateX(55px);
+}
+
+/*------ ADDED CSS ---------*/
+.on
+{
+  display: none;
+}
+
+.on
+{
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 38%;
+  font-size: 12px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+}
+
+input:checked+ .slider .on
+{display: block;}
+
+input:checked + .slider .off
+{display: none;}
+
+.off {
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  transform: translate(10%,-50%);
+  top: 50%;
+  left: 38%;
+  font-size: 12px;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+}
+
+input:checked+ .slider .on
+{display: block;}
+
+input:checked + .slider .off
+{display: none;}
+/*--------- END --------*/
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;}
+/* end of toggle switch */
+
+
+ul#card-menu li {
+  display:inline;
+}
+
+      #map {
+        float: right;
+        height: 170px;
+        /* The height is 400 pixels */
+        width: 400px;
+        /* The width is the width of the web page */
+      }
+
+
+
+
+#downrotate {
+-webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+  outline: 0;
+}
+#downrotate:focus {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.search-form .form-group {
+  width: 100%;
+  height: 30px;
+  background-color:rgba(52, 83, 130, 0.85);
+  border-radius: 50px;
+  border: 1px solid #ccc;
+   opacity: 0.5;
+}
+.search-form .form-group input.form-control {
+  padding-right: 20px;
+  border: 0 none;
+  background: transparent;
+  box-shadow: none;
+  display:block;
+}
+.search-form .form-group input.form-control::-webkit-input-placeholder {
+  display: none;
+}
+.search-form .form-group input.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  display: none;
+}
+.search-form .form-group input.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  display: none;
+}
+.search-form .form-group input.form-control:-ms-input-placeholder {
+  display: none;
+}
+.search-form .form-group span.form-control-feedback {
+  z-index: 2;
+  position: absolute;
+    left: 0;
+    padding-left: 10px;
+  display: block;
+  width: 34px;
+  height: 34px;
+  color: #3596e0;
+  font-size: 16px;
+  object-position: left;
+  float: left;
+}
+
+
+#date-icon {
+    float: right;
+}
+
+
+
+.avatar {
+	width: 60px;
+	height: 60px;
+  border-radius: 40px; /* половина ширины и высоты */
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 59%;
+  padding: 10px;
+  height: 100%; /* Should be removed. Only for demonstration */
+}
+.column2 {
+  margin-left: 5px;
+  float: left;
+  width: 40%;
+  padding: 10px;
+  height: 100%; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    
+#head1 {
+  padding: 10px;
+  margin-top: 2px;
+  background-image: url('dashboard/bill_header_bg.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#head2 {
+  padding: 19px;
+  margin-top: 2px;
+  background-image: url('dashboard/bill_header_bg.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+/* Start of Topbar */
+.s {
+    font-family: SignPainter HouseScript;
+    color: rgba(255, 255, 255, 1);
+    font-weight: lighter;
+    font-size: 300%;
+    margin-top: 27%;
+    margin-left: 3%;
+}
+.plitter{
+    font-family: SignPainter HouseScript;
+    color: rgba(255, 255, 255, 1);
+    font-size: 220%;
+    font-weight: lighter;
+    margin-top: 26%;
+    margin-left: -2px;
+}
+.split{
+    color: rgba(227, 174, 32, 1);
+    margin-left: 20%;
+    position: relative;
+    top: -62px;
+    left: -5%;
+    font-size: 45%;  
+}
+/* End of Topbar */
+
+/* Start of Sidebar */
+

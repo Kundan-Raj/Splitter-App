@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Friends-splitter</title>
+    <link href="stylefiles/contact.css" rel="stylesheet" type="text/css">
+      
+    <!-- Bootstrap core CSS -->
+    <link href="https://db.onlinewebfonts.com/c/cfdf18a10f253f0aa9db6db978d328c0?family=SignPainter+HouseScript" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
+      
+    <!-- Bootstrap Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDr4hv3W_J8l6nID8mdG1YXMBbWa6YbBkA&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+
+  </head>
+    
+  <body id="page-top">
+      
+  <!-- Page Wrapper -->
+  <div class="active" id="wrapper">
+      
+    <!-- Sidebar -->
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+                <div class="sidebar" id="sidebar">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" type="button" href="#" id="dash-shado">
+                        <br/>
+                        <img src="images/contact/dash_board_icon_not_active.png" alt="dash-icon" id="dash-icon-act">
+                        <p class="dash" id="dash-text">
+                        DASHBOARD 
+                        </p>
+                        </a><hr style="background-color: white; margin-top: -2%;"/>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                        <img src="images/dashboard/friend_icon.png" alt="fnd-icon" id="fnd-icon">
+                        <p class="dash" id="fnd-text">
+                        FRIENDS
+                        </p>
+                        </a><hr style="background-color: white; margin-top: -1.2%;"/>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="cont-shadow">
+                        <img src="images/contact/Contact_icon_active.png" alt="cont-icon" id="cont-icon">
+                        <p class="dash" id="cont-text">
+                        CONTACT
+                        </p>
+                        </a><hr style="background-color: white; margin-top: -1%;"/>
+                    </li>
+                </ul>
+                </div>
+            </nav>
+            
+    <nav id="Profile-sidebar" class="col-md-3 col-lg-2 d-md-block sidebar collapse" style="">
+        <div class="sidebar-sticky pt-3">
+        <!--<div class="carousel-inner"> -->
+            <div class="carousel-item active">
+                <img src="images/dashboard/profile_image.png" alt="profile pic" height="120%;" width="110%;" style="margin-left: -5%; margin-top: -5%;">
+                    <div class="carousel-caption" style="">
+                        <img src="images/dashboard/Settings.png" alt="" style="margin-bottom: 105%; margin-left: 110%;">
+                    </div>
+                    <div class="carousel-caption" style="bottom: -10%;">
+                        <h3 id="fname" style="top:80%; font-family: Raleway; font-size: 100%; text-align: left;">Dorothy </h3>
+                        <h3 id="lname" style="font-family: Raleway; font-size: 100%; text-align: left;">Marian Davis</h3>
+                    </div>   
+            </div>
+        </div>
+        <!-- Balence Details -->
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <div class="sidebar-heading" style="font-family: Raleway; font-weight: 700; font-size:12px;">
+            SUMMARY
+        </div>
+        <hr class="sidebar-divider" style="margin-top: 8%;">     
+            <div class="left">
+                <p style="font-family: sans-serif;margin-left: 15%; margin-top: 2%; color: rgba(244, 165, 35, 1); line-height: 1px;">$250</p>
+                <p style="font-family: sans-serif;margin-left: 16%; margin-top: -4%;font-size:11px;">Debit</p>
+            </div>
+            <div class="right">
+                <p style="margin-left: 85%; margin-top: 12%; font-family: sans-serif; color: rgba(244, 165, 35, 1);">$350</p>
+                <p style="margin-left: 88%; margin-top: -20px; font-family: sans-serif; font-size:11px;">Credit</p>
+            </div>
+                <hr class="sidebar-divider" style="margin-top: -4.5%;">
+                <p style="font-family: sans-serif; margin-top: -6%;">
+                    <span style="font-size:12px; margin-left: 13%;">Balance</span><span style="color: rgba(244, 165, 35, 1);margin-left: 25%;">- $100</span>
+                </p>
+            <hr class="sidebar-divider" style="margin-top: -5%;">
+                <div class="left">
+                    <p style="font-family: sans-serif;margin-left: 18%; margin-top: -5%;color: rgba(244, 165, 35, 1);">250</p>
+                    <p style="font-family: sans-serif;margin-left: 15%; margin-top: -7%;font-size:11px; line-height: 0px;">Friends</p>
+                </div>
+                <div class="right2">
+                    <p style="margin-left: 130%; margin-top: 20%; font-family: sans-serif;color: rgba(244, 165, 35, 1);">350</p>
+                    <p style="margin-left: 140%; margin-top: -21px; font-family: sans-serif;font-size:11px;">Bills</p>
+                </div>
+                <hr class="sidebar-divider" style="margin-top: 0%;">
+                <div class="sidebar-heading" style="font-family: Raleway; font-weight: 700; font-size:12px;">
+                    INVITE A NEW FRIEND
+                </div>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="e-mail" Placeholder="Name" Style="max-height: 30px; font-size: 15px;"/>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Enter his/her email ID" id="pwd" Style="max-height: 30px; margin-top: -5%;font-size: 15px;"/>
+                    </div>
+                    <img src="images/dashboard/send_button.png" alt="btn" type="button" style="height: 30px; margin-top: -9%;">
+                </form>
+    </nav>
+    <!-- End of Sidebar -->
+      
+    <!-- Main Content -->
+    <div id="content">
+          
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+        
+    <!-- Topbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: rgba(52, 83, 130, 1);width: 100%; position: fixed; height: 11%;">
+        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#"> 
+            <p style="display: flex; align-items: center;">
+            <span class="s">$</span>
+            <span class="plitter">plitter</span>
+            </p>
+            <span Class="split" style="position: relative;">SPLIT IT UP</span>
+        </a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                <img src="images/dashboard/add_Bill.png" alt="add-bill">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                <span><img src="images/dashboard/notification.png" alt="notification"></span>
+                <span class="badge badge-danger badge-counter">3+</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                <img src="images/dashboard/logout.png" alt="logout">
+                </a>
+            </li>
+        </ul>
+    </nav> 
+    <!-- End of Topbar -->
+    
+    <!-- Begin Page Content -->
+    <div class="container-fluid" style="">
+        
+    <!-- Content Row -->
+    <br/><br/><br>
+    <div class="row" id="bill-head" style="margin-left: .1px;">
+        <div class="contact-bg" style="">    
+            <p style="margin-left: 25px;margin-top: 20px; color: rgba(255, 255, 255, 0.98);font-family: Raleway; font-weight: 700;">CONTACT</p>
+            <p style="margin-left: 200px;margin-top: 30px; color: rgba(255, 255, 255, 0.8);font-family: Raleway; font-weight: 500;">805 Veterans Blv<br/> Sute 322 <br/>Redwood city, CA 94063</p> 
+            <p style="margin-left: 500px;margin-top:-75px; color: rgba(255, 255, 255, 0.8);font-family: Raleway; font-weight: 500;">415-201-93-34 <br/>hellow@34gment.com</p>
+        </div> 
+    </div>
+    <!-- Content Row -->
+
+    <!-- Content Row -->
+  
+   <div class="row" style="margin-left: 23.8%; background-color: rgba(0, 0, 0, 0.1); width: 77%; height: 350px;">
+       <div class="col-6" style="margin-top: 10px;">
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" id="e-mail" Placeholder="Name"/>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Email" id="pwd" />
+            </div>
+            <textarea class="form-control" rows="5" id="comment" placeholder="Message"></textarea>
+            <button type="submit" class="btn btn-warning rounded-pill" style="padding: 3px 3px 3px 3px; width: 100px; font-size: 14px; background-color: rgba(244, 165, 35, 1); font-family: Roboto; font-weight: 700; color: rgba(0, 0, 0, 0.98);float: right; margin-top: 11px;">SUMBIT</button>
+           </form>
+           </div>
+       <div class="col-6" style="">
+           
+        
+           <div id="map"></div>
+           
+    </div>
+        
+    
+
+    </div>
+        </div>
+    <!-- /.container-fluid -->
+    
+    </div>
+    <!-- End of Main Content -->
+        
+    <!-- Footer -->
+
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+         <footer class="sticky-footer bg-light" style="position:fixed; width: 100%;  flex-shrink: 0; padding: 10px; object-position: bottom;bottom: 0px; background-color: rgba(241, 241, 241, 1);">
+            <div class="container my-auto">
+              <div class="copyright text-center my-auto" style="color: rgba(0, 0, 0, 1); font-family: Raleway; font-weight: 400; font-size: 13px;">
+                <span style="float: left; margin-left: -95px;">Privacy and terms</span>
+                <span style="float: right; margin-right: -95px;">&#169; 2013-2016 . All rights reserved.</span>
+              </div>
+            </div>
+          </footer>
+  </div>
+  <!-- End of Page Wrapper -->
+      
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+      <!-- map -->
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }   
+        
+
+    </script>
+<script>
+$(function() {
+  $('input[name="birthday"]').daterangepicker({
+    singleDatePicker: true,
+    showDropdowns: true,
+    minYear: 1901,
+    maxYear: parseInt(moment().format('YYYY'),10)
+  }, function(start, end, label) {
+    var years = moment().diff(start, 'years');
+  });
+});
+   
+</script>
+      
+  </body>
+  </html>
+

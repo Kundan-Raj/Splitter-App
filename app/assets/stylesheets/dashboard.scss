@@ -21,10 +21,6 @@ body {
   outline: 0 !important;
 }
 
-/* Start of Topbar */
-
-/* End of Topbar */
-
 /* Start of Sidebar */
 #sidebarMenu {
     position: fixed; 
@@ -34,10 +30,10 @@ body {
     left:0%;
 }
 #sidebar {
-    margin-left: -29.5px;
+    margin-left: -60px;
 }
 #dash-shadow {
-    margin-left: -2%;
+    margin-left: -8%;
    -moz-box-shadow:    inset 0 0 10px #000000;
    -webkit-box-shadow: inset 0 0 10px #000000;
    box-shadow:         inset 0 0 10px #000000;
@@ -50,7 +46,7 @@ body {
     margin-top: -30px;
 }
 #dash-text {
-    margin-left: 10%; 
+    margin-left: 9%; 
     line-height: 0px; 
     font-family: Raleway; 
     font-weight: 600; 
@@ -65,12 +61,13 @@ body {
     height: 30%; 
     width: 30%; 
     color: rgba(255, 255, 255, 1);
-    margin-left: 45%; 
-    margin-top: -20px;
+    margin-left: 35%; 
+    margin-top: -15px;
 }
 #fnd-text {
     margin-left: 25%; 
-    line-height: 1px; 
+    line-height: 4px;
+    margin-top: 5px;
     font-family: Raleway; 
     font-weight: 600; 
     font-size: 80%;
@@ -78,14 +75,14 @@ body {
 }
 #frnd-hr {
     background-color: white; 
-    margin-top: -1%;
+    margin-top: 0%;
 }
 #cont-icon{
     height: 25%; 
     width: 25%; 
     color: rgba(255, 255, 255, 1); 
-    margin-left: 48%; 
-    margin-top: -20px;
+    margin-left: 38.5%; 
+    margin-top: -10px;
 }
 #cont-text {
     margin-left: 24%; 
@@ -97,7 +94,7 @@ body {
 }
 #cont-hr {
     background-color: white; 
-    margin-top: -15%;
+    margin-top: -10%;
 }
 /* End of Sidebar */
 
@@ -142,7 +139,7 @@ body {
     font-size:12px;
 }
 #sum-div {
-    margin-top: 10%;
+    margin-top: 3%;
 }
 #D-amt {
     font-family: sans-serif;
@@ -188,12 +185,12 @@ body {
     font-size:12px; 
     margin-left: 13%;
 }
-B-amt {
+#B-amt {
     color: rgba(244, 165, 35, 1);
     margin-left: 25%;
 }
 #B-hr {
-    margin-top: -5%;
+    margin-top: -6.5%;
 }
 #frnds-no {
     font-family: sans-serif;
@@ -226,7 +223,7 @@ B-amt {
     margin-left: 140%; 
     margin-top: -21px; 
     font-family: sans-serif;
-    font-size:11px;">
+    font-size:11px;
 }
 /* End of Summary */
 
@@ -235,16 +232,17 @@ B-amt {
     margin-top: 0%;
 }
 #invite-form {
+    margin-top: -5px;
     font-family: Raleway; 
     font-weight: 700; 
     font-size:12px;
 }
 #invite-name {
-    max-height: 30px; 
+    max-height: 28px; 
     font-size: 15px;
 }
 #invite-email {
-    max-height: 30px; 
+    max-height: 28px; 
     margin-top: -5%;
     font-size: 15px;
 }
@@ -289,6 +287,9 @@ B-amt {
     left: -5%;
     font-size: 45%; 
     position: relative;
+}
+#logout {
+    padding-top: 12px;
 }
 /* End of Topbar */
 
@@ -596,6 +597,11 @@ input:checked + .slider .off
     /* The height is 400 pixels */
     width: 400px;
     /* The width is the width of the web page */
+}
+#next-img {
+    float: right; 
+    display: inline-flex; 
+    margin-top: 25px;
 }
 /*  ----         */
 
