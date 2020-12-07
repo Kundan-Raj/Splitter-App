@@ -1,0 +1,35 @@
+<!-- --------------------------------SIDEBAR-------------------------------- -->
+
+<nav id="dash-sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+    <div class="sidebar" id="dash-sidebar">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <%= link_to dashboard_index_path do %>
+                    <br/>
+                    <%= image_tag("/assets/friend/dash_board_icon_not_active.png", alt: "dash-icon", id: "dash-icon-act") %>
+                    <p class="dash" id="dash-text">
+                    DASHBOARD 
+                    </p>
+                <% end %><hr id="dash-hr" />
+            </li>
+            
+            <li class="nav-item">
+                <%= link_to friend_index_path do %>
+                    <%= image_tag("/assets/friend/friend_icon_active.png", alt: "fnd-icon", id: "dash-fnd-icon") %>
+                    <p class="dash" id="dash-fnd-text">
+                    FRIENDS
+                    </p>
+                <% end %><hr id="dash-frnd-hr" />
+            </li>
+            
+            <li class="nav-item">
+                <%= link_to contact_index_path do %>
+                    <%= image_tag("/assets/dashboard/Contact_icon.png", alt: "cont-icon", id: "dash-cont-icon") %>
+                    <p class="dash" id="dash-cont-text">
+                    CONTACT
+                    </p>
+                <% end %><hr id="dash-cont-hr" />
+            </li>
+        </ul>
+    </div>
+</nav>  

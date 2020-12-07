@@ -1,63 +1,57 @@
 <!-- Start of landing page -->
 <header class="masthead">
-    <div class="container h-100">
-        <div class="row h-50 align-items-center">
-            
+  <div class="container h-100">
+    <div class="row h-50 align-items-center">
+        
 <!-- code for left side of the page -->
-            <div class="col-6">
-                <div class="logo">
-                    <p id="ls-para1">
-                    <span class="s">$</span>
-                    <span class="plitter">plitter</span>
-                    </p>
-                    <span Class="split">SPLIT IT UP</span>
-                </div>
-                <p id="ls-para2">
-                We offers <br/> Easy and effective money <br/>sharing calculations.</p>
-                <p id="ls-para3">Now in your mobile phones also</p>
-                <p id="ls-para4">GET THE APP</p>
-                <div class="buttons-lg" style="">
-                    <a href="https://www.apple.com/in/app-store/">
-                    <%= image_tag("/assets/landing/applestore_button.png", alt: "applestore_button", id: "applestore_button") %>
-                    </a> 
-                    <a href="https://play.google.com/store">
-                    <%= image_tag("/assets/landing/google_play_button.png", alt: "google_play_button", id: "google_play_button") %>
-                    </a>
-                </div>
-                <p id="ls-para5">Privacy and terms</p>
-            </div>
-            
-<!-- code for right side of the page -->    
-            <div class="col-6">
-                <% unless current_user %>
-                <div class="nav">
-                    <span class="lg-btn"><button type="button" class="btn btn-warning rounded-pill" id="lg" data-toggle="modal" data-target="#myModal">Login</button></span>
-                    <span class="rg-btn"><button type="button" class="btn btn-warning rounded-pill" id="rg" data-toggle="modal" data-target="#reg-Modal">Register</button></span>
-                </div>
-                <% else %>
-                    <%= link_to( destroy_user_session_path, :method => :delete) do %>
-                        Logout
-                <% end %>
-                <% end %>
-                <div class="r-section">
-                    <p id="rs-para1">Leave the <br/>complicated money <br/>calculations</p>
-                    <br>
-                    <%= image_tag("/assets/landing/Know_your_credits_.png", alt: "Know_your_credits", id: "Know_your_credits") %>
-                    <br/><br/>
-                    <%= image_tag("/assets/landing/arrow.png", alt: "arrow", id: "arrow") %>
-                    <br/><br/>
-                    <p id="rs-para2">
-                        <span id="follow">Follow us on </span>
-                        <span><%= image_tag("/assets/landing/google-plus-icon.png", alt: "google-plus-icon", id: "google-plus-icon") %></span>
-                        <span><%= image_tag("/assets/landing/facebook-icon.png", alt: "facebook-icon", id: "facebook-icon") %></span>
-                    </p>
-                </div>
-                <p id="rs-para3">&#169; 2013-2016 . All rights reserved. <% User.column_names %> </p>
-            </div>  
+      <div class="col-6">
+        <div class="lan-logo">
+            <p id="ls-para1">
+            <span class="lan-s">$</span>
+            <span class="lan-plitter">plitter</span>
+            </p>
+            <span Class="lan-split">SPLIT IT UP</span>
         </div>
+        <p id="ls-para2">
+        We offers <br/> Easy and effective money <br/>sharing calculations.</p>
+        <p id="ls-para3">Now in your mobile phones also</p>
+        <p id="ls-para4">GET THE APP</p>
+        <div class="buttons-lg">
+            <a href="https://www.apple.com/in/app-store/">
+            <%= image_tag("/assets/landing/applestore_button.png", alt: "applestore_button", id: "applestore_button") %>
+            </a>
+            <a href="https://play.google.com/store">
+            <%= image_tag("/assets/landing/google_play_button.png", alt: "google_play_button", id: "google_play_button") %>
+            </a>
+        </div>
+        <p id="ls-para5">
+        Privacy and terms</p>
+      </div>
+        
+<!-- code for right side of the project -->    
+      <div class="col-6">
+          <div class="nav">
+              <span class="lg-btn"><button type="button" class="btn btn-warning rounded-pill" id="lg" data-toggle="modal" data-target="#loginModal" data-remote="rough3.html">Login</button></span>
+              <span class="rg-btn"><button type="button" class="btn btn-warning rounded-pill" id="rg" data-toggle="modal" data-target="#registerModal" data-remote="rough3.html">Register</button></span>
+          </div>
+          <div class="r-section">
+            <p id="rs-para1">Leave the <br/>complicated money <br/>calculations</p>
+            <br>
+            <%= image_tag("/assets/landing/Know_your_credits_.png", alt: "Know_your_credits", id: "Know_your_credits") %>
+            <br/><br/>
+            <%= image_tag("/assets/landing/arrow.png", alt: "arrow", id: "arrow") %>
+            <br/><br/>
+            <p id="rs-para2">
+              <span id="follow">Follow us on </span>
+              <span><%= image_tag("/assets/landing/google-plus-icon.png", alt: "google-plus-icon", id: "google-plus-icon") %></span>
+              <span><%= image_tag("/assets/landing/facebook-icon.png", alt: "facebook-icon", id: "facebook-icon") %></span>
+            </p>
+          </div>
+          <p id="rs-para3">&#169; 2013-2016 . All rights reserved.</p>
+      </div>
     </div>
+  </div>
 </header>
-
 <%= render "home/login" %>
 <%= render "home/register" %>
 <script type="text/javascript">
@@ -83,18 +77,17 @@ let signIn = function (email, password) {
 	  success: function(response) {
 	    console.log(response);
         if (response.id !== null || response.id !== ''){
-            console.log('signed in')
+            console.log('signed in');
             window.location = 'dashboard/index'
         }
-          else{
-              alert.message("cant'login");
-              console.log('afghj')
+        else{
+              console.log('not signed in');
           }
        
-	  },
-      error: function(response) {
-          alert(JSON.stringify(response));
+	  },error: function(response) {
+           $('#errors').text('*Please enter correct Username and Password');
         }
+           
 	});
 }
 

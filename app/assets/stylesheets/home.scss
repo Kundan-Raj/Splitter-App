@@ -1,7 +1,4 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
-
+/* ---------------------------------------------LANDING PAGE--------------------------------------------- */
 /* style for backgrounds */
 .masthead {
   width: 100%;
@@ -12,48 +9,66 @@
   background-position: center,left;
   background-repeat: no-repeat, no-repeat;
 }
+#grad1 {
+  height: 86px;;
+  width: 100%;
+  background-color: rgba(237, 237, 237, 0); /* For browsers that do not support gradients */
+  background-image: linear-gradient(rgba(215, 215, 215, 0.82),rgba(237, 237, 237, 0));
+  background-repeat: no-repeat;
+}
+/* end of style for background */
+
 /* styles for left side */
-.logo {
-     margin-top: 7%;
+.lan-logo {
+     margin-top: 8%;
 }
 #ls-para1 {
     display: flex; 
     align-items: center;
 }
-.s {
-    font-family: SignPainter-HouseScript;
+.lan-s {
+    font-family: SignPainter HouseScript;
     color: white;
     font-weight: lighter;
     font-size: 700%;
     margin-left:20%;
 }
-.plitter{
-    font-family: SignPainter-HouseScript;
+.lan-plitter{
+    font-family: SignPainter HouseScript;
     color: white;
     font-size: 400%;
     font-weight: lighter;
 }
-.split{
+.lan-split{
     position: relative;
     color: rgba(227, 174, 32, 1);
-    margin-left: 40%;
+    margin-left: 20%;
     position: relative;
     top: -85px;
-    left: 50px;
+    left: 40px;
 }
 #ls-para2 {
-    color: white; 
+    color: rgba(255, 255, 255, 1); 
     text-align: right;
     margin-right: 25%; 
-    margin-top:15%; 
+    margin-top:14%; 
     font-weight: 800; 
     font-family: Raleway; 
     font-size: 200%; 
     line-height:100%;
 }
 #ls-para3, #ls-para4 {
-    color: white;
+    color: rgba(255, 255, 255, 1);
     text-align: right;
+    font-weight: 400; 
+    font-family: Raleway;
+    margin-right: 25%;
+}
+#ls-para4 {
+    color: rgba(255, 255, 255, 1);
+    text-align: right;
+    font-weight: 700; 
+    font-family: Raleway;
     margin-right: 25%;
 }
 .buttons-lg {
@@ -63,34 +78,40 @@
 #applestore_button {
     margin-right: 3%;
     width:45%; 
-    height:12%;
+    height:15%;
 }
 #google_play_button {
     width:45%; 
-    height:12%;
+    height:15%;
 }
 #ls-para5 {
     text-align: left; 
     margin-top: 3%; 
     font-family: Raleway; 
-    color: white; 
+    color: rgba(255, 255, 255, 1); 
     font-size: 80%; 
     margin-left: 5%; 
     font-weight: 400;
 }
+/* end of style for left side */
+
 /* styles for right side */
 .nav {
-    margin-left: 30%;
+    margin-left: 40%;
     margin-top: 5%;
 }
 #lg {
     width:103px; 
     height:36px;
+    font-family:Raleway;
+    font-weight: 700;
 }
 #rg {
     margin-left: 10%;
     width:103px; 
     height:36px;
+    font-family:Raleway;
+    font-weight: 700;
 }
 .r-section {
     margin-top: 22%;
@@ -124,104 +145,205 @@
 }
 #rs-para3 {
     text-align: right; 
-    margin-top: 8%; 
+    margin-top: 9%; 
     margin-right: -10%; 
     font-size: 80%; 
     font-family: Raleway; 
     font-weight: 400; 
     color: rgba(74, 74, 74, 1);
 }
-/* ------------------------------------ */
-.modal-dialog {
-  position: relative;
-  display: table;
-  overflow: auto;
-  min-width: 300px;
-}
-/*
-.modal-body { /* Restrict Modal width to 90% 
-  overflow-x: auto !important;
-  max-width: 90vw !important;
-}
-*/
+/* end of style for right side */
 
-.sidenav {
-    background-color: rgba(52, 83, 130, 1);
-    /*overflow-x: hidden;
-    padding-top: 20px;*/
+/* ---------------------------------------------LOGIN PAGE------------------------------------------------------- */
+#log-col-4 {
+    background-color: rgba(52, 83, 130, 1); 
 }
-
-.main {
-    padding: 0px 10px;
+#log-brand {
+    margin-top: -40px;
+    display: flex; 
+    align-items: center;
 }
-.s {
-    font-family: SignPainter-HouseScript;
-    color: white;
-    font-weight: lighter;
+.log-s {
+    font-family: SignPainter HouseScript;;
+    color: rgba(255, 255, 255, 1);
     font-size: 700%;
-    margin-left:20%;
+    margin-left:6.5%;
 }
-.plitter{
-    font-family: SignPainter-HouseScript;
-    color: white;
+.log-plitter{
+    font-family: SignPainter HouseScript;;
+    color: rgba(255, 255, 255, 1);
     font-size: 400%;
-    font-weight: lighter;
 }
-.split{
+.log-split{
     color: rgba(227, 174, 32, 1);
-    margin-left: 20%;
+    margin-left: 1%;
     position: relative;
     top: -85px;
-    left: 40px;
+    left: 3px;
 }
+.log-col6 {
+    margin-left: 5%;
+    width: 54%;
+}
+#modal-close {
+    text-align: right; 
+    margin-top:3%; 
+    width: 7%; 
+    margin-right: -7%;
+}
+
+/* Login Modal Styling  */
+#login-dialog {
+    max-width: 43%;
+}
+#log-cont-header {
+    color: darkblue; 
+    font-family: Raleway; 
+    text-align: left; 
+    font-weight: 700;
+}
+#log-para-1 {
+    color: rgba(102, 102, 102, 1); 
+    font-family: Open Sans; 
+    font-weight: 400;
+}
+#log-link1{
+    color: rgba(52, 83, 130, 1);
+}
+#log-btn {
+    width: 100%;
+}
+#reg-para1 {
+    color: rgba(102, 102, 102, 1); 
+    font-family: Open Sans; 
+    font-weight: 600;
+    text-align: center;
+}
+#log-link2{
+    color: rgba(52, 83, 130, 1);
+    font-family: Open Sans; 
+    font-weight: 600;
+    margin-left: 30%;
+    text-align: center;
+}
+/* end of style for register page */
+
+/* -----------------------------------------REGISTER PAGE--------------------------------------------- */
+#reg-col-4 {
+    background-color: rgba(52, 83, 130, 1); 
+}
+#reg-brand {
+    display: flex; 
+    align-items: center;
+}
+.reg-s {
+    font-family: SignPainter HouseScript;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 200;
+    font-size: 700%;
+    margin-left:10%;
+}
+.reg-plitter{
+    font-family: SignPainter HouseScript;
+    color: rgba(255, 255, 255, 1);
+    font-size: 400%;
+    font-weight: 200;
+}
+.reg-split{
+    color: rgba(227, 174, 32, 1);
+    margin-left: 0%;
+    position: relative;
+    top: -86px;
+    left: 0px;
+}
+.reg-col6 {
+    margin-left: 4%;
+    width: 54%;
+}
+#reg-modal-close {
+    text-align: right; 
+    margin-top:2%; 
+    width: 7%; 
+    margin-right: -8%;
+}
+
+/* Register Modal Styling  */
+#register-dialog{
+    max-width: 50%;
+} 
+#ls-reg-Modal {
+    margin-top: 68%;
+    text-align: center;
+}
+#reg-cont-header {
+    color: rgba(52, 83, 130, 1); 
+    font-family: Raleway; 
+    text-align: left; 
+    font-weight: 700;
+}
+#reg-btn {
+    width: 100%;
+    font-family: Raleway;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1);
+}
+#reg-para1 {
+    color: rgba(102, 102, 102, 1); 
+    font-family: Open Sans; 
+    font-weight: 600;
+    text-align: center;
+}
+#reg-link{
+    color: rgba(52, 83, 130, 1);
+    font-family: Open Sans;
+    font-weight: 600;
+}
+/* end of style for register page */
+
+/* ------------------------------------------FORM ICONS------------------------------------------------------- */
 input#user {
-    background-image: url('images/username_icon.png');
+    background-image: url('register/username_icon.png');
     background-size:auto;
     background-position:5% center;
     background-repeat: no-repeat;
-    text-indent: 10%;
+    text-indent: 15%;
 }
 input#user:focus {
     background-image:none;
     text-indent:0px
-    }
+}
 input#e-mail {
-    background-image: url('images/email_icon.png');
+    background-image: url('register/email_icon.png');
     background-size:auto;
     background-position:5% center;
     background-repeat: no-repeat;
-    text-indent: 10%;
+    text-indent: 15%;
 }
 input#e-mail:focus {
     background-image:none;
     text-indent:0px
     }
-
 input#pwd {
-    background-image: url('images/password_icon.png');
+    background-image: url('register/password_icon.png');
     background-size:auto;
     left: 5%;
     background-position:5% center;
     background-repeat: no-repeat;
-    text-indent: 8%;
+    text-indent: 15%;
 }
 input#pwd:focus {
     background-image:none;
     text-indent:0px
     }
-
 input#phn {
-    background-image: url('images/phone_icon.png');
+    background-image: url('register/phone_icon.png');
     background-size:auto;
     left: 5%;
     background-position:5% center;
     background-repeat: no-repeat;
-    text-indent: 8%;
+    text-indent: 15%;
 }
 input#phn:focus {
     background-image:none;
     text-indent:0px
-    }
-#log-btn {
-    width: 100%;
 }

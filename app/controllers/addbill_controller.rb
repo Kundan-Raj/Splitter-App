@@ -1,0 +1,2 @@
+class AddbillController < ApplicationController
+end

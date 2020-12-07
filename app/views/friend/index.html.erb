@@ -1,94 +1,50 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Friends-splitter</title>
-    <link href="stylefiles/friends.css" rel="stylesheet" type="text/css">
+    <title>Friends</title>
       
     <!-- Bootstrap core CSS -->
-    <link href="https://db.onlinewebfonts.com/c/cfdf18a10f253f0aa9db6db978d328c0?family=SignPainter+HouseScript" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
     <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
       
     <!-- Bootstrap Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDr4hv3W_J8l6nID8mdG1YXMBbWa6YbBkA&callback=initMap&libraries=&v=weekly"
       defer
     ></script>
-  
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   </head>
-    
-  <body id="page-top">
+
+<body id="page-top">
       
   <!-- Page Wrapper -->
   <div class="active" id="wrapper">
       
-    <!-- Sidebar -->
-    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
-                <div class="sidebar" id="sidebar">
-                <ul class="nav flex-column">
-                    <li class="nav-item">
-                        <%= link_to dashboard_index_path do %>
-                        <br/>
-                        <%= image_tag("/assets/friend/dash_board_icon_not_active.png", alt: "dash-icon", id: "dash-icon-act") %>
-                        <p class="dash" id="dash-text">
-                        DASHBOARD 
-                        </p>
-                        <% end %><hr id="db-hr"/>
-                    </li>
-                    <li class="nav-item">
-                        <%= link_to friend_index_path do %>
-                        <%= image_tag("/assets/friend/friend_icon_active.png", alt: "fnd-icon", id: "fnd-icon") %>
-                        <p class="dash" id="fnd-text">
-                        FRIENDS
-                        </p>
-                        <% end %><hr id="fnd-hr"/>
-                    </li>
-                    <li class="nav-item">
-                        <%= link_to contact_index_path do %>
-                        <%= image_tag("/assets/friend/Contact_icon.png", alt: "cont-icon", id: "cont-icon") %>
-                        <p class="dash" id="cont-text">
-                        CONTACT
-                        </p>
-                        <% end %><hr id="con-hr"/>
-                    </li>
-                </ul>
-                </div>
-            </nav>
-      <%= render "dashboard/profilebar" %>
-    <!-- End of Sidebar -->
+  <!-- Sidebar -->
+      <%= render "friend/fndsidebar" %>
+  <!-- End of Sidebar -->
       
-    <!-- Main Content -->
-    <div id="content">
+  <!-- Profile bar -->            
+      <%= render "dashboard/profilebar" %>
+  <!-- End of Profile bar -->
+      
+  <!-- Main Content -->
+      <div id="content">
           
-    <!-- Content Wrapper -->
-    <div id="content-wrapper" class="d-flex flex-column">
-        
-    <!-- Topbar -->
-        <%= render "dashboard/navbar" %>
-    <!-- End of Topbar -->
+  <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+
+  <!-- Topbar -->
+      <%= render "dashboard/navbar" %>
+  <!-- End of Topbar -->
     
     <!-- Begin Page Content -->
     <div class="container-fluid" style="">
         
-       <!-- Content Row -->
+    <!-- Content Row -->
     <br/><br/><br>
         <div class="row" style="margin-left: 23.8%; height: 100%;">
         <div class="column1" style="background-color:rgba(255, 255, 255, 1);" >
@@ -98,36 +54,36 @@
             FRIENDS
           </span>
             <span class="btn-group" style="text-align: right; float: right; margin-right: 10px;">
-                <button id="btn-1">CREATED</button>
-                <button id="btn-2">YOU ARE IN</button>
-                <button id="btn-3">SETTLED</button>
+                <button id="btn-1">CREDIT</button>
+                <button id="btn-2">DEBIT</button>
+                <button id="btn-3">ALL</button>
           </span>
         </div> 
         </div>
       <div class="row2" style="width: 100%; padding: 20px;">
         <span style="font-family: Raleway; font-weight: 400; font-size: 15px; color: rgba(93, 93, 93, 1); ">Select friends to settle up the amount</span>
-          <button type="submit" class="btn btn-warning rounded-pill" style="padding: 3px 3px 3px 3px; width: 110px; font-size: 14px; background-color: rgba(227, 174, 32, 1); font-family: Roboto; font-weight: 700; color: rgba(0, 0, 0, 0.06),rgba(0, 0, 0, 1);float: right; ">SETTLE UP</button>
+          <button type="submit" class="btn btn-warning rounded-pill" style="padding: 3px 3px 3px 3px; width: 110px; font-size: 14px; background-color: rgba(227, 174, 32, 1); font-family: Roboto; font-weight: 700; color: rgba(0, 0, 0, 0.06),rgba(0, 0, 0, 1);float: right;" data-toggle="modal" data-target="#settle-up-modal">SETTLE UP</button>
         </div> 
       
       <div class="scroll" style="height: 100%; width: 100%; overflow-y: scroll; margin-top: 5px;">
        <div class="row1" style=" background-color: rgba(242, 242, 242, 1); height: 50px; width:100%;">
         <p  style=" width: 95%; padding: 10px;">
         <span style="font-family: Raleway; font-weight: 700; font-size: 16px; color: rgba(0, 0, 0, 0.8);" id="demo"></span>
-        <span><%= image_tag("/assets/friend/calendar_icon.png", alt: "date-icon", id: "date-icon") %>
-         <!--   <img src="images/dashboard/calendar_icon.png" alt="calender" style="float: right;"> --></span></p>
+        <span> <%= image_tag("/assets/friend/calendar_icon.png", alt: "calender", id: "calender", float: "right") %>
+        <!--    <img src="images/dashboard/calendar_icon.png" alt="calender" style="float: right;"> --> </span></p>
     </div>
-    <ul id="accordion" style="width: 100%; height: 100%; margin-top:0px; margin-left:0px;">
+    <ul id="fndaccordion" style="width: 100%; height: 100%;">
         <li class="card" style="list-style-type:none; margin-left: -40px;">
             <div class="card-header" style="border-radius: 0px; max-height: 90px; background-color: rgba(251, 251,251, 1);">
                 <img class="avatar" src="http://placeimg.com/80/80/people">
                 <span style="font-family: Raleway; font-weight: 400; margin-left: 20px;">Jane Harper</span>
-                <a class="card-link" data-toggle="collapse" href="#collapseOne" style="display: inline-flex; float: right; padding-top: 25px;">
-                    <%= image_tag("/assets/friend/expand_icon.png", alt: "expand-icon", id: "expand-icon") %>
-                <!--    <img src="images/dashboard/expand_icon.png" alt=" dropdown-btn" id="downrotate">  -->
+                <a class="card-link" data-toggle="collapse" href="#collapseOne" style="display: inline-flex; float: right; padding-top: 20px;">
+                     <%= image_tag("/assets/friend/expand_icon.png", alt: "expand-icon", id: "expand-icon", float: "right") %>
+                   <!-- <img src="images/dashboard/expand_icon.png" alt=" dropdown-btn" id="downrotate"> -->
                 </a>
                 <span style="font-family: Raleway; font-weight: 700; color: rgba(52,83,130,1); text-align: right; align-items: flex-end;float: right; padding-top: 15px; padding-right: 10px;">$300</span>
             </div>
-        <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div id="collapseOne" class="collapse show" data-parent="#fndaccordion">
             <div class="card-body" style="background-color: rgba(242, 242, 242, 1); padding-left: 0px;">
                 <ul style="list-style-type:none;">
                           <li style="line-height: 0.2;">
@@ -179,8 +135,9 @@ rgba(93, 93, 93, 1); font-size: 18px; float: right; padding-right: 10px;">$50</s
          <form action="" class="search-form">
                 <div class="form-group has-feedback">
             		<label for="search" class="sr-only">Search</label>
-                    <span class="glyphicon glyphicon-search form-control-feedback" style="float: left;display: flex;"></span>
-            		<input type="text" class="form-control" name="search" id="search" placeholder="Search for a friend" style="padding-left: 40px;">
+                    <span class="fa fa-search form-control-feedback" style="float: left;display: flex; color:white; background-color: white;"></span>
+                <!--    <span class="glyphicon glyphicon-search form-control-feedback" style="float: left;display: flex;"></span> -->
+            		<input type="text" class="form-control" name="search" id="search" placeholder="Search for a friend" style="padding-left: 40px; color:white;">
               		
             	</div>
             </form>
@@ -194,40 +151,34 @@ rgba(93, 93, 93, 1); font-size: 18px; float: right; padding-right: 10px;">$50</s
     <!-- /.container-fluid -->
     
     </div>
-    <!-- End of Main Content -->
-        
-    
+  <!-- End of Main Content -->
 
+      </div>
+  <!-- End of Content Wrapper -->
       
-
-    </div>
-    </div>
-    <!-- End of Content Wrapper -->
-      <!-- Footer -->
-        <footer class="sticky-footer bg-light" style="position:fixed; width: 100%;  flex-shrink: 0; padding: 10px; object-position: bottom;bottom: 0px; background-color: rgba(241, 241, 241, 1);">
+  <!-- Footer -->
+      <footer class="sticky-footer bg-light" id="dash-footer">
             <div class="container my-auto">
-              <div class="copyright text-center my-auto" style="color: rgba(0, 0, 0, 1); font-family: Raleway; font-weight: 400; font-size: 13px;">
-                <span style="float: left; margin-left: -95px;">Privacy and terms</span>
-                <span style="float: right; margin-right: -95px;">&#169; 2013-2016 . All rights reserved.</span>
+              <div class="copyright text-center my-auto" id="dash-footer-st">
+                <span id="dash-ls-footer">Privacy and terms</span>
+                <span id="dash-rs-footer">&#169; 2013-2016 . All rights reserved.</span>
               </div>
             </div>
-          </footer>
+      </footer>
       <!-- End of Footer -->
+      
       </div>
   <!-- End of Page Wrapper -->
       
-
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+      
   <!-- Core plugin JavaScript-->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for all pages-->
-
-<!-- map -->
-    <script>
+  <script src="js/sb-admin-2.min.js"></script>
+  <script>
       // Initialize and add the map
       function initMap() {
         // The location of Uluru
@@ -243,26 +194,25 @@ rgba(93, 93, 93, 1); font-size: 18px; float: right; padding-right: 10px;">$50</s
           map: map,
         });
       }   
-        
-
-    </script>
-      <script>
-document.getElementById("demo").innerHTML = formatAMPM();
-
-function formatAMPM() {
-var d = new Date(),
-    minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
-    hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
-   // else if (condition2) { return value2; }
-    //else if (condition3) { return value3; 
-   // ampm = d.getHours() >=12 ? 'st' : 'th',
-    ampm = d.getHours() >=12 ? '' : 'th',
-    //ampm = d.getHours() >= 12 ? 'pm' : 'am',
-    months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
-    days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-return d.getDate()+ampm+' '+months[d.getMonth()]+' '+d.getFullYear();
-}
-</script>
+  </script>  
       
+  <script>
+    document.getElementById("demo").innerHTML = formatAMPM();
+
+    function formatAMPM() {
+    var d = new Date(),
+        minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+        hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+       // else if (condition2) { return value2; }
+        //else if (condition3) { return value3; 
+       // ampm = d.getHours() >=12 ? 'st' : 'th',
+        ampm = d.getHours() >=12 ? '' : 'th',
+        //ampm = d.getHours() >= 12 ? 'pm' : 'am',
+        months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+        days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    return d.getDate()+ampm+' '+months[d.getMonth()]+' '+d.getFullYear();
+    }
+  </script>
+      <%= render "friend/settleup" %>
   </body>
   </html>

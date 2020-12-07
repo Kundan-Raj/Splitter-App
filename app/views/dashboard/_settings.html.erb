@@ -1,0 +1,25 @@
+<!-- ---------------------------------------PROFILE SETTINGS---------------------------------- -->
+    <div class="modal fade" id="setting-up-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: rgba(52, 83, 130, 1);">
+                    <h5 class="modal-title" id="settle-up-header">SETTINGS</h5>
+                     <%= image_tag("/assets/settle_up/Close_white.png", alt: "close", class: "close", "data-dismiss": "modal", "arial-label": "Close", "aria-hidden": "true") %>
+                  <!--  <img src="assets/images/" alt="close" type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true"> -->
+                </div>
+                <div class="modal-body" style="background-color: rgba(242, 242, 242, 1);">
+                    <p style="font-family: Raleway; font-weight: 700;">Change Your Profile Photo</p><hr>
+                    <form name="newad" method="post" enctype="multipart/form-data" action="">
+                        <table>
+                        <img style=" display: block; margin-left: auto; margin-right: auto;" src="upload2/avatar.png" width="200" height="200" />
+                        <tr><td><input type="file" name="image" ></td></tr>
+                        <tr><td><input name="Submit" type="submit" value="Upload image"></td></tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-dismiss="modal">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>

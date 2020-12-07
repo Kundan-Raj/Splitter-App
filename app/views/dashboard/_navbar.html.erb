@@ -1,32 +1,29 @@
-      <nav class="navbar navbar-expand-lg navbar-dark " id="topbar">
-        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#"> 
-            <p id="d-brand">
-            <span class="dash-s">$</span>
-            <span class="dash-plitter">plitter</span>
-            </p>
-            <span Class="dash-split" style="position: relative;">SPLIT IT UP</span>
-        </a>
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">
+<!-- ----------------------------------------Top Bar--------------------------------------------- -->
+
+<nav class="navbar navbar-expand-lg navbar-dark " id="com-topbar">
+    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#"> 
+        <p id="topbar-brand">
+            <span class="topbar-s">$</span>
+            <span class="topbar-plitter">plitter</span>
+        </p>
+            <span Class="topbar-split" style="position: relative;">SPLIT IT UP</span>
+    </a>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="#">
                 <%= image_tag("/assets/dashboard/add_Bill.png", alt: "add_Bill", id: "add-bill") %>
-          <!--      <img src="images/dashboard/add_Bill.png" alt="add-bill">   -->
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                <span><%= image_tag("/assets/dashboard/notification.png", alt: "notification", id: "notify") %>
-                  <!--  <img src="images/dashboard/notification.png" alt="notification">  -->  </span>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">
+                <span><%= image_tag("/assets/dashboard/notification.png", alt: "notification", id: "notify") %></span>
                 <span class="badge badge-danger badge-counter">3+</span>
-                </a>
-            </li>
+            </a>
+        </li>
             <li class="nav-item">
                 <%= link_to( destroy_user_session_path, :method => :delete) do %>
-                    <%= image_tag("/assets/dashboard/logout.png", alt: "logout", id: "logout") %>
+                    <%= image_tag("/assets/dashboard/logout.png", alt: "logout", id: "topbar-logout") %>
                 <% end %>
-           <!--     <a class="nav-link" href="#">
-                <img src="images/dashboard/logout.png" alt="logout">
-                </a>   --->
             </li>
-        </ul>
-    </nav> 
+    </ul>
+</nav> 
